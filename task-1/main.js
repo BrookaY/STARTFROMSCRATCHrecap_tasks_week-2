@@ -31,6 +31,9 @@ function legendaryCelebs (celebs, newString){
 }
 legendaryCelebs(celebs, newString);
 
+//////////////////////////////////////////////////
+
+
 /*///////////////////////////////////////////////*
 const legendaryCelebs = celebs.map(newString => {
 return celebs + newString;
