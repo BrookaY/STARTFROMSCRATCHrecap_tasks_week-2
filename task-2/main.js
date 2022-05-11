@@ -6,8 +6,6 @@ const start = document.getElementById("start");
 
 
 
-
-
 /* - This works. Now it needs to stop after 12 seconds///////
 
 */
@@ -19,24 +17,15 @@ var element = document.getElementById('timer');
     timer = setInterval(()=>{
         element.innerHTML = +sec;
         sec ++;
-        if (timer < 3){
-            clearInterval();
-        }
-    }, 1000)
-})()
+    }, 1000);
+})();
+
+setTimeout(function(){
+    clearInterval(timer);
+}, 13000);
 
 
-
-
-
-
-
-
-
-
-
-
-
+//////////ITS STOPS AFTER 12!!!!!! DOESN'T MAKE SENSE BECAUSE I'VE PUT 13 SECONDS BUT WHATEVER!!
 
 
 
