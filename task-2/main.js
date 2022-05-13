@@ -13,7 +13,7 @@ var timer;
 var element = document.getElementById('timer');
 
 (function(){
-    var sec = 0;
+    var sec = 1;
     timer = setInterval(()=>{
         element.innerHTML = +sec;
         sec ++;
@@ -22,7 +22,7 @@ var element = document.getElementById('timer');
 
 setTimeout(function(){
     clearInterval(timer);
-}, 13000);
+}, 12000);
 
 
 //////////ITS STOPS AFTER 12!!!!!! DOESN'T MAKE SENSE BECAUSE I'VE PUT 13 SECONDS BUT WHATEVER!!
