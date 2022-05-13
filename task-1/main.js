@@ -1,12 +1,10 @@
 
-let myName = "Chris";
-let newString = " is now a legend";
 
-
-function makeLegend () {
-  return myName + newString;
+function makeLegend (name) {
+  return name + " is now a legend";
 }
-makeLegend (myName, newString);
+makeLegend("Chris");
+
 
 let celebs = [
   "David Beckham",
@@ -21,23 +19,21 @@ let celebs = [
   "Emma Thompson"
 ];
 
-for (let n of celebs){
-  console.log(n + newString);
+
+var legendaryCelebs = []
+for (let celeb of celebs) {
+  legendaryCelebs.push(makeLegend(celeb));
 };
 
 
-function legendaryCelebs (celebs, newString){
-  return celebs + newString;
-}
-legendaryCelebs(celebs, newString);
-
-//////////////////////////////////////////////////
+function isFirstLetterVowel(s) {
+  return ['a', 'e', 'i', 'o', 'u'].indexOf(s[0].toLowerCase()) !== -1
+};
 
 
-/*///////////////////////////////////////////////*
-const legendaryCelebs = celebs.map(newString => {
-return celebs + newString;
-})
-const legendaryCelebs = '<ul>' + display.join('');
-console.log(legendaryCelebs);
-*/////////////////////////////////////////////////
+var vowelCelebs = []
+for (let celeb of celebs) {
+  if (isFirstLetterVowel(celeb)) {
+    vowelCelebs.push(celeb);
+  }
+};
